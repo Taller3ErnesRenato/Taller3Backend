@@ -6,12 +6,17 @@ on:
       - main
 
 jobs:
+
   build-and-deploy:
     name: Build and Push Backen Docker Image
     runs-on: ubuntu-latest
 
     steps:
-      # 1. Checkout del código fuente
+      - name: Debug workspace
+        run: |
+          ls -l
+          ls -l Taller3Backend
+            # 1. Checkout del código fuente
       - name: Checkout code
         uses: actions/checkout@v3
 
