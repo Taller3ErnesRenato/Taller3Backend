@@ -12,10 +12,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Debug workspace
-        run: |
-          ls -l
-          ls -l Taller3Backend
+      
             # 1. Checkout del código fuente
       - name: Checkout code
         uses: actions/checkout@v3
